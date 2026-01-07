@@ -3,33 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SomCrico SEO</title>
+    <title>SomCrico SEO - Smart Guide</title>
+    
+    <script src="https://pl28422778.effectivegatecpm.com/ac/19/5a/ac195afb1aa7483f5417baea4db24535.js"></script>
+
     <style>
         body { font-family: 'Segoe UI', sans-serif; background-color: #000000; color: #ffffff; margin: 0; padding: 15px; display: flex; flex-direction: column; align-items: center; }
-        .container { background: #1a1a1a; width: 100%; max-width: 480px; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05); text-align: center; border: 1px solid #333; box-sizing: border-box; }
-        .header-box { background: linear-gradient(135deg, #00d2ff, #3a7bd5); color: white; padding: 20px; border-radius: 15px; margin-bottom: 25px; font-weight: bold; font-size: 24px; text-transform: uppercase; letter-spacing: 1px; }
-        input { width: 100%; padding: 15px; border: 1px solid #333; border-radius: 10px; box-sizing: border-box; font-size: 16px; margin-bottom: 15px; outline: none; background: #262626; color: white; }
-        input:focus { border-color: #00d2ff; }
+        .container { background: #1a1a1a; width: 100%; max-width: 480px; padding: 25px; border-radius: 20px; border: 1px solid #333; box-sizing: border-box; }
+        .header-box { background: linear-gradient(135deg, #00d2ff, #3a7bd5); color: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; font-weight: bold; font-size: 24px; text-align: center; text-transform: uppercase; }
+        
+        input, select { width: 100%; padding: 15px; border: 1px solid #333; border-radius: 10px; box-sizing: border-box; font-size: 16px; margin-bottom: 12px; outline: none; background: #262626; color: white; }
+        
+        /*    */
+        .how-to-use { background: #111; border: 1px dashed #444; padding: 12px; border-radius: 10px; margin-bottom: 20px; text-align: left; }
+        .how-to-use h4 { margin: 0 0 8px 0; font-size: 14px; color: #00d2ff; text-transform: uppercase; }
+        .how-to-use p { margin: 0; font-size: 12px; color: #aaa; line-height: 1.6; }
+        .step-flow { font-weight: bold; color: #fff; background: #333; padding: 2px 6px; border-radius: 4px; font-size: 11px; }
+
         .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
         .main-btn { color: white; border: none; padding: 14px 5px; border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: bold; transition: 0.3s; }
-        .main-btn:active { transform: scale(0.95); }
         .btn-title { background: #FFC107; color: #000; } 
         .btn-hashtag { background: #20c997; } 
         .btn-keyword { background: #0056b3; } 
         .btn-tags { background: #FF0000; } 
 
         #result-container { margin-top: 15px; display: none; flex-direction: column; width: 100%; }
+        #search-type-indicator { font-size: 16px; font-weight: bold; color: #00d2ff; margin-bottom: 10px; text-align: center; border-bottom: 1px solid #333; padding-bottom: 5px; }
+        .copy-all-btn { background: #ffffff; color: #000; border: none; padding: 12px; border-radius: 10px; margin-bottom: 10px; width: 100%; font-weight: bold; cursor: pointer; }
         
-        /* নতুন টাইটেল স্টাইল */
-        #search-type-indicator { font-size: 18px; font-weight: bold; color: #00d2ff; margin-bottom: 10px; text-transform: capitalize; border-bottom: 1px solid #333; padding-bottom: 5px; }
-
-        .copy-all-btn { background: #ffffff; color: #000; border: none; padding: 12px; border-radius: 10px; margin-bottom: 10px; width: 100%; font-weight: bold; cursor: pointer; font-size: 14px; }
-        #tags-output { display: flex; flex-direction: column; gap: 8px; text-align: left; max-height: 450px; overflow-y: auto; padding: 10px; border: 1px solid #333; border-radius: 10px; background: #111; }
+        #tags-output { display: flex; flex-direction: column; gap: 8px; max-height: 400px; overflow-y: auto; padding: 5px; }
         .tag-row { display: flex; justify-content: space-between; align-items: center; background: #222; border: 1px solid #333; padding: 12px; border-radius: 10px; gap: 10px; }
-        .tag-info { display: flex; align-items: center; gap: 10px; flex: 1; }
-        .tag-text { font-size: 13px; color: #eee; word-break: break-word; flex: 1; line-height: 1.4; }
-        .tag-perc { font-size: 10px; background: #28a745; color: white; padding: 3px 8px; border-radius: 5px; font-weight: bold; min-width: 45px; text-align: center; }
-        .copy-small { background: #333; border: 1px solid #444; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 11px; font-weight: bold; color: #fff; }
+        .tag-text { font-size: 13px; color: #eee; flex: 1; }
+        .tag-perc { font-size: 10px; background: #28a745; color: white; padding: 3px 8px; border-radius: 5px; }
+        .copy-small { background: #333; border: 1px solid #444; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 11px; color: #fff; }
+
         .loader { border: 4px solid #333; border-top: 4px solid #00d2ff; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; display: none; margin: 20px auto; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
@@ -38,17 +45,38 @@
 
     <div class="container">
         <div class="header-box">SomCrico SEO</div>
-        <input type="text" id="topicInput" placeholder="Enter Topic (e.g. India vs Pakistan)">
-        <div class="btn-grid">
-            <button class="main-btn btn-title" onclick="generateTitles()">Viral Titles</button>
-            <button class="main-btn btn-hashtag" onclick="generateHashtags()">Hashtags (#)</button>
-            <button class="main-btn btn-keyword" onclick="startProcess('keyword')">Keywords</button>
-            <button class="main-btn btn-tags" onclick="startProcess('tags')">Viral Tags</button>
+        
+        <div class="how-to-use">
+            <h4>How to use:</h4>
+            <p>
+                <span class="step-flow">1. Select Country</span> &rarr; 
+                <span class="step-flow">2. Enter Topic</span> &rarr; 
+                <span class="step-flow">3. Click Button</span>
+            </p>
+            <p style="margin-top:5px; font-style: italic; font-size: 11px;">* Choose Titles, Hashtags, Keywords, or Tags as needed.</p>
         </div>
+
+        <select id="countrySelect">
+            <option value="US">Select Country (Default: Global)</option>
+            <option value="IN">India (Hindi/English) </option>
+            <option value="BD">Bangladesh (Bengali) </option>
+            <option value="PK">Pakistan (Urdu) </option>
+            <option value="SA">Saudi Arabia (Arabic) </option>
+        </select>
+
+        <input type="text" id="topicInput" placeholder="Type your topic here...">
+
+        <div class="btn-grid">
+            <button class="main-btn btn-title" onclick="generateTitles()">Titles</button>
+            <button class="main-btn btn-hashtag" onclick="generateHashtags()">Hashtags</button>
+            <button class="main-btn btn-keyword" onclick="startProcess('keyword')">Keywords</button>
+            <button class="main-btn btn-tags" onclick="startProcess('tags')">Tags</button>
+        </div>
+
         <div id="loader" class="loader"></div>
         <div id="result-container">
             <div id="search-type-indicator"></div>
-            <button class="copy-all-btn" onclick="copyAll()">📋 Copy All Results</button>
+            <button class="copy-all-btn" onclick="copyAll()"> Copy All Results</button>
             <div id="tags-output"></div>
         </div>
     </div>
@@ -57,25 +85,38 @@
     let finalResult = [];
     let currentType = '';
 
-    function showLoading(typeLabel) {
+    const countryConfig = {
+        'IN': { lang: 'hi', region: 'in' },
+        'BD': { lang: 'bn', region: 'bd' },
+        'PK': { lang: 'ur', region: 'pk' },
+        'SA': { lang: 'ar', region: 'sa' },
+        'US': { lang: 'en', region: 'us' }
+    };
+
+    function showLoading(label) {
         document.getElementById('loader').style.display = "block";
         document.getElementById('result-container').style.display = "none";
-        // টাইটেল সেট করা
-        document.getElementById('search-type-indicator').innerText = "Results for: " + typeLabel;
+        document.getElementById('search-type-indicator').innerText = "Generating " + label + "...";
     }
 
     async function startProcess(type) {
-        const query = document.getElementById('topicInput').value;
+        const query = document.getElementById('topicInput').value.trim();
+        const countryKey = document.getElementById('countrySelect').value;
         if (!query) return alert("Please enter a topic!");
-        showLoading(type === 'keyword' ? 'Keywords' : 'Viral Tags');
+        
+        showLoading(type);
         finalResult = [];
         currentType = type;
-        const variations = [query, query + " tips", query + " 2026"];
-        for (let q of variations) { await getSuggestions(q); }
+        const config = countryConfig[countryKey];
+        
+        await getSuggestions(query, config.lang, config.region);
+        if (config.lang !== 'en') await getSuggestions(query, 'en', config.region);
+
+        finalResult = finalResult.filter(item => item.toLowerCase().includes(query.toLowerCase()));
         displayData();
     }
 
-    function getSuggestions(q) {
+    function getSuggestions(q, hl, gl) {
         return new Promise((resolve) => {
             const script = document.createElement('script');
             const callback = 'cb_' + Math.random().toString(36).substr(2, 5);
@@ -84,53 +125,30 @@
                 finalResult = [...new Set([...finalResult, ...res])];
                 delete window[callback]; script.remove(); resolve();
             };
-            script.src = `https://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=${encodeURIComponent(q)}&callback=${callback}`;
+            script.src = `https://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=${encodeURIComponent(q)}&hl=${hl}&gl=${gl}&callback=${callback}`;
             document.body.appendChild(script);
         });
     }
 
     function generateTitles() {
-        const query = document.getElementById('topicInput').value;
-        if (!query) return alert("Enter a topic!");
-        showLoading('Viral Titles');
+        const query = document.getElementById('topicInput').value.trim();
+        if (!query) return alert("Enter topic!");
+        showLoading('Titles');
         currentType = 'title';
-        const emojis = ["🔥", "🚀", "😱", "✅", "😲", "💎"];
-        finalResult = [
-            `${query} ${emojis[0]} (2026 Updated)`,
-            `How to viral ${query} 🚀 Complete Guide`,
-            `${query} শিখুন মাত্র ১ মিনিটে 😱`,
-            `Secret Method: ${query} ✅ 100% Success`,
-            `${query} করার সহজ উপায় 😲 Don't Miss!`,
-            `${query} | Best Strategy for 2026 🔥`,
-            `The Truth about ${query} 😱 ${emojis[3]}`,
-            `Top 10 Secret: ${query} 💎`
-        ];
+        finalResult = [`${query} - Full Guide`, `${query} | Latest Updates`, `${query} (Deep Analysis)`, `Everything about ${query}`, `Why ${query} is trending` ];
         setTimeout(displayData, 500);
     }
 
     async function generateHashtags() {
-        const query = document.getElementById('topicInput').value;
-        if (!query) return alert("Enter a topic!");
-        showLoading('Hashtags (#)');
+        const query = document.getElementById('topicInput').value.trim();
+        if (!query) return alert("Enter topic!");
+        showLoading('Hashtags');
         currentType = 'hashtag';
-        finalResult = ["#" + query.replace(/\s+/g, '').toLowerCase()];
-        const variations = [query];
-        for (let q of variations) {
-            await new Promise((resolve) => {
-                const script = document.createElement('script');
-                const callback = 'h_cb_' + Math.random().toString(36).substr(2, 5);
-                window[callback] = (data) => {
-                    data[1].map(i => i[0]).forEach(tag => {
-                        const h = "#" + tag.toLowerCase().replace(/[^a-z0-9]/g, '');
-                        if (h.length > 1) finalResult.push(h);
-                    });
-                    delete window[callback]; script.remove(); resolve();
-                };
-                script.src = `https://suggestqueries.google.com/complete/search?client=youtube&ds=yt&q=${encodeURIComponent(q)}&callback=${callback}`;
-                document.body.appendChild(script);
-            });
-        }
-        finalResult = [...new Set(finalResult)].slice(0, 50);
+        finalResult = ["#" + query.replace(/\s+/g, '')];
+        const config = countryConfig[document.getElementById('countrySelect').value];
+        await getSuggestions(query, config.lang, config.region);
+        finalResult = finalResult.map(i => i.startsWith('#') ? i : "#" + i.replace(/\s+/g, ''));
+        finalResult = [...new Set(finalResult)].slice(0, 30);
         displayData();
     }
 
@@ -139,30 +157,16 @@
         document.getElementById('loader').style.display = "none";
         document.getElementById('result-container').style.display = "flex";
         output.innerHTML = "";
-        
-        finalResult.slice(0, 50).forEach(item => {
+        finalResult.forEach(item => {
             const div = document.createElement('div');
             div.className = 'tag-row';
-            let label = currentType === 'title' ? 'Viral' : (currentType === 'hashtag' ? 'Best' : Math.floor(Math.random()*15+85)+'%');
-            div.innerHTML = `
-                <div class="tag-info">
-                    <span class="tag-perc">${label}</span>
-                    <span class="tag-text">${item}</span>
-                </div>
-                <button class="copy-small" onclick="copySingle('${item.replace(/'/g, "\\'")}')">Copy</button>
-            `;
+            div.innerHTML = `<div class="tag-info"><span class="tag-perc">${currentType === 'title' ? 'TOP' : '95%'}</span><span class="tag-text">${item}</span></div><button class="copy-small" onclick="copySingle('${item.replace(/'/g, "\\'")}')">Copy</button>`;
             output.appendChild(div);
         });
     }
 
-    function copySingle(text) {
-        navigator.clipboard.writeText(text).then(() => alert("Copied: " + text));
-    }
-
-    function copyAll() {
-        let sep = currentType === 'hashtag' ? ' ' : (currentType === 'title' ? '\n' : ', ');
-        navigator.clipboard.writeText(finalResult.slice(0, 50).join(sep)).then(() => alert("All results copied!"));
-    }
+    function copySingle(text) { navigator.clipboard.writeText(text).then(() => alert("Copied!")); }
+    function copyAll() { navigator.clipboard.writeText(finalResult.join(currentType === 'hashtag' ? ' ' : '\n')).then(() => alert("All copied!")); }
 </script>
 </body>
 </html>
